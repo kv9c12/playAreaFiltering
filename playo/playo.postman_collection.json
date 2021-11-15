@@ -1,0 +1,87 @@
+{
+  "info": {
+    "_postman_id": "4fc211bc-2a90-47d4-998c-c2a7647bcaf3",
+    "name": "test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "playo/sort",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"avgRating\": true,\r\n    \"ratingCount\": true,\r\n    \"order\": \"desc\",\r\n    \"pageNumber\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/sort",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["sort"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Playo/search",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"IIMB Sports Complex\",\r\n    \"city\": \"Bangalore\",\r\n    \"area\": \"Bannerghatta Road\",\r\n    \"pageNumber\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/search",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["search"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Playo/FilterVenue",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"city\": \"Bangalore\",\r\n    \"sports\": [\"SP33\"],\r\n    \"booking\": 2,\r\n    \"avgRating\": 0,\r\n    \"amenities\": [\"Tea\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/filterVenue",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["filterVenue"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
